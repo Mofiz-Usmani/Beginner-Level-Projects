@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.main_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eef8cb;
+}
+
+/* Calculator Container */
+.calculator {
+    width: 320px;
+    background-color: #a4c7e9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+/* Display Section */
+.display {
+    padding: 20px;
+    background-color: #505b60;
+    text-align: right;
+}
+
+#par {
+    font-size: 2.5em;
+    color: #ecf0f1;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Buttons Grid */
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #96c0eb;
+    color: #ecf0f1;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #9ab5db;
+}
+
+.btn:active {
+    background-color: #90b2d3;
+}
+
+/* Operator Buttons */
+.operator {
+    background-color: #94c64a;
+    color: #fff;
+}
+
+.operator:hover {
+    background-color: #8dcb30;
+}
+
+.operator:active {
+    background-color: #080808;
+}
+
+/* Equal Button */
+.equal {
+    background-color: #94c64a;
+    grid-column: span 1;
+}
+
+.equal:hover {
+    background-color: #94c64a;
+}
+
+.equal:active {
+    background-color: #94c64a;
+}
+
+/* Number Buttons */
+.number {
+    background-color: #88b8e8;
+}
+
+.number:hover {
+    background-color: #c7d1de;
+}
+
+.number:active {
+    background-color: #2c3e50;
+}
+
+/* Special Buttons */
+#clear,
+#backspace {
+    background-color: #94c64a;
+    ;
+}
+
+#reset {
+    background-color: #88b8e8;
+}
+
+#clear:hover,
+#backspace:hover,
+#reset:hover {
+    background-color: #94c64a;
+}
+
+#clear:active,
+#backspace:active,
+#reset:active {
+    background-color: #88b8e8;
+}

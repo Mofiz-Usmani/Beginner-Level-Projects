@@ -1,0 +1,47 @@
+.delicious-handrawn-regular {
+    font-family: "Delicious Handrawn", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+body {
+    font-family: "Delicious Handrawn", serif;
+    background-color: lightgray;
+}
+
+h1 {
+    color: rgb(160, 86, 160);
+    font-size: 60px;
+}
+
+.box {
+    height: 600px;
+    width: 800px;
+    background-color: rgb(250, 250, 249);
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 0.5px;
+    margin-top: 70px;
+    border-radius: 3%;
+}
+
+#inputBox {
+    background-color: white;
+    border: 1px solid rgb(104, 88, 99);
+    height: 30px;
+    width: 500px;
+    margin-top: 50px;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+.inputDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin-top: 50px;
+    
+}
