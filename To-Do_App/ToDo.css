@@ -43,5 +43,10 @@ h1 {
 
 button {
     margin-top: 50px;
-    
+    height: 35px;
+    width: 45px;
+    color: rgb(249, 248, 249);
+    background-color: rgb(160, 86, 160);
+    border: 2px solid white;
+    border-radius: 4px;
 }
