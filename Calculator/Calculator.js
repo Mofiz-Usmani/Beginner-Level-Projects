@@ -1,77 +1,39 @@
 const display = document.getElementById("par");
-const buttons = document.querySelectorAll(".btn");
-let currentInput = "";
-let firstOperand = "";
+const buttonsContainer = document.querySelector(".buttons-grid");
+let currentInput = "0";
+let prevInput = "";
 let operator = null;
-let shouldResetDisplay = false;
 
-// Add event listeners to all buttons
-buttons.forEach((button) => {
-    button.addEventListener("click", () => handleButtonClick(button));
+// Single event listener for all buttons
+buttonsContainer.addEventListener("click", (e) => {
+    if (!e.target.classList.contains("btn")) return;
+    const value = e.target.textContent.trim();
+
+    if (e.target.classList.contains("number")) handleNumber(value);
+    else if (e.target.classList.contains("operator")) handleOperator(value);
+    else if (e.target.id === "equals") handleEquals();
+    else if (e.target.id === "clear") resetCalculator();
+    else if (e.target.id === "backspace") handleBackspace();
+    else if (e.target.id === "decimal") handleDecimal();
 });
 
-function handleButtonClick(button) {
-    const value = button.textContent;
-
-    if (button.classList.contains("number")) {
-        handleNumber(value);
-    } else if (button.classList.contains("operator")) {
-        handleOperator(value);
-    } else if (button.id === "equals") {
-        handleEquals();
-    } else if (button.id === "clear") {
-        handleClear();
-    } else if (button.id === "backspace") {
-        handleBackspace();
-    } else if (button.id === "reset") {
-        handleReset();
-    } else if (button.id === "decimal") {
-        handleDecimal();
-    }
-}
-
-function handleNumber(number) {
-    if (shouldResetDisplay) {
-        currentInput = "";
-        shouldResetDisplay = false;
-    }
-    currentInput += number;
+function handleNumber(num) {
+    currentInput = currentInput === "0" ? num : currentInput + num;
     updateDisplay();
 }
 
 function handleOperator(op) {
-    if (operator !== null) handleEquals();
-    firstOperand = currentInput;
+    if (operator) handleEquals();
+    prevInput = currentInput;
     operator = op;
-    shouldResetDisplay = true;
+    currentInput = "0";
 }
 
 function handleEquals() {
-    if (operator === null || shouldResetDisplay) return;
-    const secondOperand = currentInput;
-    const result = calculate(firstOperand, operator, secondOperand);
-    currentInput = result.toString();
+    if (!operator || prevInput === "") return;
+    currentInput = calculate(prevInput, operator, currentInput);
     operator = null;
-    shouldResetDisplay = true;
-    updateDisplay();
-}
-
-function handleClear() {
-    currentInput = "";
-    firstOperand = "";
-    operator = null;
-    updateDisplay();
-}
-
-function handleBackspace() {
-    currentInput = currentInput.slice(0, -1);
-    updateDisplay();
-}
-
-function handleReset() {
-    currentInput = "";
-    firstOperand = "";
-    operator = null;
+    prevInput = "";
     updateDisplay();
 }
 
@@ -82,25 +44,31 @@ function handleDecimal() {
     }
 }
 
-function updateDisplay() {
-    display.textContent = currentInput || "0";
+function handleBackspace() {
+    currentInput = currentInput.length > 1 ? currentInput.slice(0, -1) : "0";
+    updateDisplay();
 }
 
-function calculate(num1, op, num2) {
-    const a = parseFloat(num1);
-    const b = parseFloat(num2);
+function resetCalculator() {
+    currentInput = "0";
+    prevInput = "";
+    operator = null;
+    updateDisplay();
+}
+
+function calculate(a, op, b) {
+    const x = parseFloat(a);
+    const y = parseFloat(b);
     switch (op) {
-        case "+":
-            return a + b;
-        case "-":
-            return a - b;
-        case "X":
-            return a * b;
-        case "/":
-            return b !== 0 ? a / b : "Error";
-        case "%":
-            return a % b;
-        default:
-            return "Error";
+        case "+": return (x + y).toString();
+        case "-": return (x - y).toString();
+        case "X": return (x * y).toString();
+        case "/": return y !== 0 ? (x / y).toString() : "Error";
+        case "%": return ((x / 100) * y).toString();
+        default: return "Error";
     }
+}
+
+function updateDisplay() {
+    display.textContent = currentInput;
 }
