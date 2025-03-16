@@ -13,7 +13,7 @@ body {
 .box {
   display: flex;
   flex-direction: column; /* stack items vertically*/
-  justify-content: space-between;
+  justify-content: space-between; /* spreads content inside box*/
   align-items: center;
   height: 450px;
   width: 550px;
