@@ -1,10 +1,10 @@
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* centers content horizontaly*/
+  align-items: center; /* centers content vertically*/
   height: 100vh;
-  margin: 0;
-  font-family: "Delicious Handrawn", cursive;
+  margin: 0; /* removes default margin*/
+  font-family: "Delicious Handrawn", cursive; 
   font-weight: 400;
   font-style: normal;
   background-color: #f4f4f9; 
@@ -12,7 +12,7 @@ body {
 
 .box {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* stack items vertically*/
   justify-content: space-between;
   align-items: center;
   height: 450px;
