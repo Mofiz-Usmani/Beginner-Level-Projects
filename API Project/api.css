@@ -15,8 +15,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 400px;
-  width: 500px;
+  height: 450px;
+  width: 550px;
   border: 5px solid #6a5acd; 
   border-radius: 20px;
   padding: 15px;
@@ -27,7 +27,7 @@ body {
 
 #fact {
   color: #483d8b; 
-  font-size: 30px;
+  font-size: 35px;
 }
 
 button {
@@ -41,4 +41,8 @@ button {
 
 button:hover {
   background-color: #5a4ec3;
+}
+
+h1 {
+  font-size: 37px;
 }
