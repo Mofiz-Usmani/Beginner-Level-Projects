@@ -4,13 +4,10 @@ let unorder = document.querySelector('ul');
 let list = document.querySelector('li');
 
 add.addEventListener('click', () => {
-    console.log("clicked");
     change();
-
 });
 
 function change() {
-    console.log(inp.value);
     let newList = document.createElement('li');
     unorder.appendChild(newList);
 
@@ -32,6 +29,5 @@ unorder.addEventListener("click", function(event) {
     if (event.target.classList.contains("del")) {
         let listItem = event.target.closest("li"); // Get the closest <li> instead of previous element
         if (listItem) listItem.remove(); // Remove only that task
-        console.log("Deleted!");
     }
 });
