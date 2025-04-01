@@ -30,10 +30,8 @@ function change() {
 
 unorder.addEventListener("click", function(event) {
     if (event.target.classList.contains("del")) {
-        let btnContainer = event.target.parentElement; 
-        let listItem = btnContainer.previousElementSibling; 
-        if (listItem) listItem.remove(); 
-        btnContainer.remove();
+        let listItem = event.target.closest("li"); // Get the closest <li> instead of previous element
+        if (listItem) listItem.remove(); // Remove only that task
         console.log("Deleted!");
     }
 });
