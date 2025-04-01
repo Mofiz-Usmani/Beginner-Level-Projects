@@ -25,6 +25,7 @@ function change() {
     
     newbtn.setAttribute('id','btn');
     newbtn.classList.add('del');
+    inp.value = "";
 }
 
 unorder.addEventListener("click", function(event) {

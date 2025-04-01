@@ -15,7 +15,8 @@ h1 {
 }
 
 .box {
-    height: 600px;
+    min-height: 600px;  
+    max-height: 1000px;
     width: 800px;
     background-color: rgb(250, 250, 249);
     margin: 0 auto;
