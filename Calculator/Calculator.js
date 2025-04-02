@@ -1,12 +1,18 @@
-const display = document.getElementById("par");
-const buttonsContainer = document.querySelector(".buttons-grid");
-let currentInput = "0";
+const display = document.getElementById("par"); // selects par display
+const buttonsContainer = document.querySelector(".buttons-grid"); // selects all buttons
+let currentInput = "0";  // Stores the number currently displayed or being typed
+
+// stores the previous input 
 let prevInput = "";
+
+// stores the selected operator
 let operator = null;
 
-// Single event listener for all buttons
+// Single event listener for all buttons container listens for clicks
 buttonsContainer.addEventListener("click", (e) => {
+    // Ensures that only buttons with the "btn" class trigger an action
     if (!e.target.classList.contains("btn")) return;
+    // 
     const value = e.target.textContent.trim();
 
     if (e.target.classList.contains("number")) handleNumber(value);
