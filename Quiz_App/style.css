@@ -24,21 +24,23 @@ header {
 }
 
 .nav h3 {
-    margin-left: 10px;
+    margin-left: 6px;
 }
 
 .nav2 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-left: 100px;
 }
 
 .nav3 {
     display: flex;
     align-items: center;
+    margin-left: 30px;
 }
 
 .nav4 {
     display: flex;
     align-items: center;
+    margin-left: 30px;
 }
