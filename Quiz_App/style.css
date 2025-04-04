@@ -28,13 +28,6 @@ header {
     margin-left: 6px;
 }
 
-/* .nav2 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-left: 100px;
-} */
-
 .nav-item {
     position: relative;
     margin-left: 50px;
@@ -48,7 +41,7 @@ header {
     text-decoration: none;
     padding: 10px;
     display: inline-block;
-  }
+}
 
 .nav3 {
     display: flex;
@@ -67,18 +60,18 @@ header {
     z-index: 1;
   }
 
-  .dropdown a {
+.dropdown a {
     display: block;
     padding: 10px;
     color: white;
     text-decoration: none;
   }
 
-  .nav-item:hover .dropdown {
+.nav-item:hover .dropdown {
     display: block;
   }
 
-  .dropdown a:hover {
+.dropdown a:hover {
     background-color: #555;
   }
 
