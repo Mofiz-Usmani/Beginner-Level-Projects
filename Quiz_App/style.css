@@ -11,7 +11,7 @@ header {
     height: 65px;
     width: 100%;
     background-color: rgb(255, 255, 255);
-    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav {
@@ -87,4 +87,12 @@ header {
     align-items: center;
     margin-left: auto; /* Pushes the button to the right */
     margin-right: 30px; /* Adds some spacing from the edge */
+}
+
+.login button {
+    background-color: #D3E671;
+    height: 30px;
+    width: 60px;
+    font-size: 15px;
+    border-radius: 5px;
 }
