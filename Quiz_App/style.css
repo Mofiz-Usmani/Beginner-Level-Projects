@@ -96,6 +96,7 @@ main {
 }
 
 .container {
+    margin-left: 70px;
     padding: 20px;
     margin-top: 60px;
     height: 200px;
@@ -131,7 +132,12 @@ main {
     font-size: 40px;
     margin-bottom: 20px;
 }
+
 .container p {
+    color: rgb(red, green, blue);
+    margin-top: 40px;
     font-size: 18px;
     margin-bottom: 20px;
+    padding-right: 10px;
 }
+
