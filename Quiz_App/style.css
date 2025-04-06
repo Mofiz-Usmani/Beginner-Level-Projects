@@ -96,10 +96,10 @@ main {
 }
 
 .container {
+    padding: 20px;
     margin-top: 60px;
     height: 200px;
     width: 700px;
-    border: 1px solid rgb(0, 123, 255);
 }
 
 #btn2 {
@@ -125,4 +125,13 @@ main {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.container h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.container p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
