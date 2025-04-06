@@ -144,12 +144,15 @@ main {
 
 .main-btn {
     position: absolute;
-    height: 100px;
-    width: 150px;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: rgb(0,123,255);
-    color: white;
     margin-left: 820px;
     margin-top: 360px;
+}
+
+.main-btn button {
+    height: 36px;
+    width: 76px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background-color: rgb(1,134,115);
 }
