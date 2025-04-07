@@ -170,3 +170,22 @@ main {
     width: 100%;
     object-fit: cover;
 }
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+section h1 {
+    color: rgb(0,200,172);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.container2 {
+    height: 200px;
+    width: 650px;
+}
