@@ -24,7 +24,7 @@ header {
 
 .nav i {
     margin-right: 10px;
-    color: rgb(39, 126, 240);
+    color: rgb(0, 200, 172);
 }
 
 .nav h3 {
@@ -64,13 +64,13 @@ header {
     width: 65px;
     font-size: 17px;
     border-radius: 5px;
-    color: rgb(0,123,255);
-    border: 1px solid rgb(0,123,255); /* Add this for better button appearance */
+    color: rgb(0,200,172);
+    border: 1px solid rgb(0,200,172); /* Add this for better button appearance */
 }
 
 
 #btn1:hover {
-    background-color: rgb(0,123,255);
+    background-color: rgb(0,200,172);
     color: white;
 }
 
@@ -96,6 +96,19 @@ main {
     color: rgb(1,80,85);
 }
 
+main button {
+    background-color: rgb(0,200,172);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main button:hover {
+    background-color: rgb(1, 168, 146);
+}
+
 .container {
     margin-left: 70px;
     padding: 20px;
@@ -110,11 +123,11 @@ main {
     border-radius: 5px;
     color: white;
     border: none;
-    background-color: rgb(0,123,255);
+    background-color: rgb(0,200,172);
 }
 
 #btn2:hover {
-    background-color: rgb(0, 100, 200);
+    background-color: rgb(1, 168, 146);
 }
 
 .ilust {
@@ -141,21 +154,6 @@ main {
     font-size: 18px;
     margin-bottom: 20px;
     padding-right: 10px;
-}
-
-.main-btn {
-    position: absolute;
-    margin-left: 820px;
-    margin-top: 370px;
-}
-
-.main-btn button {
-    height: 36px;
-    width: 76px;
-    border-radius: 5px;
-    color: white;
-    border: none;
-    background-color: rgb(1,134,115);
 }
 
 .img2 {
@@ -191,8 +189,52 @@ section h1 {
 
 .container2 p {
     color: rgb(1,134,115);
-    margin-top: 40px;
     font-size: 18px;
-    margin-bottom: 20px;
     padding-right: 10px;
+}
+
+.section1 {
+    background-color: #f0f4ff; 
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.section1 h1 {
+    font-size: 3rem;
+    color: #1f2937; 
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.section1 h1::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #6366f1; 
+    display: block;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+
+section button {
+    background-color: rgb(0,200,172);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section button:hover {
+    background-color: rgb(1, 168, 146);
+}
+
+
+.img3{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
