@@ -167,7 +167,7 @@ main {
 .img2 img {
     margin-top: 50px;
     height: 100%;
-    width: 100%;
+    width: 80%;
     object-fit: cover;
 }
 
@@ -189,3 +189,4 @@ section h1 {
     height: 200px;
     width: 650px;
 }
+
