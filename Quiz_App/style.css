@@ -12,6 +12,7 @@ header {
     width: 100%;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .nav {
@@ -155,4 +156,17 @@ main {
     color: white;
     border: none;
     background-color: rgb(1,134,115);
+}
+
+.img2 {
+    height: 500px;
+    width: 700px;
+    margin-left: 50px;
+} 
+
+.img2 img {
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
