@@ -185,7 +185,7 @@ section h1 {
 .container2 {
     height: 200px;
     width: 650px;
-
+    margin-left: 20px;
 }
 
 .container2 p {
@@ -195,7 +195,8 @@ section h1 {
 }
 
 .section1 {
-    background-color: #f0f4ff; 
+    height: 50px;
+    background-color: rgb(180, 247, 238); 
     padding: 60px 20px;
     text-align: center;
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -235,23 +236,22 @@ section button:hover {
 
 
 .img3{
-    height: 70%;
-    width: 70%;
+    height: 80%;
+    width: 80%;
     object-fit: cover;
-    margin-bottom: 300px;
 }
 
 .section2 {
     display: flex;
     align-items: center;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .container3 {
     height: 200px;
     width: 1100px;
     border-radius: 5px;
-    margin-bottom: 300px;
+    margin-bottom: 100px;
     margin-right: 100px;
 }
 
@@ -264,4 +264,116 @@ section button:hover {
     color: rgb(1,134,115);
     font-size: 18px;
     padding-right: 10px;
+}
+
+.container3 button {
+    background-color: rgb(0,200,172);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container3 button:hover {
+    background-color: rgb(1, 168, 146);
+}
+
+.container4 {
+    height: 200px;
+    width: 1100px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.img4 {
+    height: 85%;
+    width: 85%;
+    object-fit: cover;
+    margin-left: 50px;
+}
+
+.section4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 400px;
+}
+
+.div-img4 {
+    height: 80%;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.container4 h1 {
+    color: rgb(0,200,172);
+    font-size: 40px;
+}
+
+.container4 p {
+    color: rgb(1,134,115);
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.container4 button {
+    background-color: rgb(0,200,172);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container4 button:hover {
+    background-color: rgb(1, 168, 146);
+}
+
+.testimonials {
+    padding: 60px 20px;
+    background-color: #f8f9fc;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 40px;
+}
+
+/* Flex container */
+.testimonial-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* This allows them to wrap if screen is small */
+}
+
+.testimonial-card {
+    background-color: #fff;
+    width: 300px;
+    padding: 25px 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.testimonial-card h4 {
+    font-weight: 600;
+    color: #555;
 }
