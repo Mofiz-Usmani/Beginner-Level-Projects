@@ -159,16 +159,15 @@ main {
 }
 
 .img2 {
-    height: 500px;
-    width: 700px;
-    margin-left: 50px;
+    height: 600px;
+    width: 750px;
 } 
 
 .img2 img {
-    margin-top: 50px;
     height: 100%;
-    width: 80%;
+    width: 85%;
     object-fit: cover;
+    margin-left: 100px;
 }
 
 section {
@@ -190,3 +189,10 @@ section h1 {
     width: 650px;
 }
 
+.container2 p {
+    color: rgb(1,134,115);
+    margin-top: 40px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
